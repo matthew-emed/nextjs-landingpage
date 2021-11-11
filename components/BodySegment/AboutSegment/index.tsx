@@ -42,7 +42,7 @@ export const AboutSegment = () => {
                 <a>OSHA recorded webinar</a>
               </List.Item>
               <List.Item>
-                <a>White House Fact Sheet</a>
+                <a>White House Fact </a>
               </List.Item>
             </List>
           </Grid.Column>
