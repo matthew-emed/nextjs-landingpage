@@ -1,5 +1,5 @@
 import { MediaContextProvider } from "@lib";
-import { FC } from "react";
+
 import DesktopContainer from "@components/Layout/DesktopContainer";
 import MobileContainer from "@components/Layout/MobileContainer";
 

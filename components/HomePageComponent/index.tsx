@@ -5,6 +5,7 @@ import {
   AboutSegment,
   StudiesSegment,
 } from "@components/BodySegment";
+import { SliderSegment } from "@components/Slider/slider";
 
 export const HomepageComponent = () => (
   <>

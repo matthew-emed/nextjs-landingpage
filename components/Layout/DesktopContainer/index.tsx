@@ -8,7 +8,7 @@ import { Component } from "react";
 import { Media } from "@lib";
 import { HomepageHeading } from "@components/Layout";
 import { MenuItems } from "../MenuItems";
-
+import { SliderSegment } from "@components/Slider/slider";
 export default class DesktopContainer extends Component {
   state = {
     fixed: null,
@@ -28,18 +28,7 @@ export default class DesktopContainer extends Component {
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
         >
-          <Segment
-            inverted
-            textAlign="center"
-            style={{
-              minHeight: 700,
-              padding: "1.2em 0em",
-              backgroundImage:
-                "url(/images/colleagues-in-a-workspace-working-together-2021-08-27-00-06-11-utc.jpg)",
-              backgroundSize: "cover",
-            }}
-            vertical
-          >
+          <SliderSegment>
             <Menu
               id="top"
               fixed={fixed ? "top" : undefined}
@@ -53,7 +42,7 @@ export default class DesktopContainer extends Component {
               </Container>
             </Menu>
             <HomepageHeading mobile={false} />
-          </Segment>
+          </SliderSegment>
         </Visibility>
         {children}
       </Media>
